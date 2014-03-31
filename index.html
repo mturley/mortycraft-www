@@ -4,66 +4,81 @@
     #morty { margin-top: 15px; margin-left: 5px; }
     #title { font-size: 38px; position: absolute; top: 15px; left: 90px; margin: 0; }
     #subtitle { position: absolute; top: 58px; left: 90px; margin: 0; }
-    .floatleft { float: left; }
-    .clear { clear: both; }
+    #nav { font-size: 18px; }
+    p { margin: 10px; }
     a { color: blue; }
+    .indent { margin-left: 10px; }
   </style>
 </head>
 <body>
   <img id="morty" src="morty64.png" />
   <h1 id="title">mortycraft.net / 96.126.111.207</h1>
   <h2 id="subtitle">Rick and Morty Fan Operated Minecraft Server</h2>
-  <br class="clear" />
-  <h2><a href="http://mortycraft.net:8123/">Click here for a dynamic map of the world</a> (we may shut this down soon for anarchy)</h2>
-  <h3>Owner: Mike Turley (superyooman in game, <a href="http://reddit.com/u/yooman">/u/yooman</a> on reddit, <a href="https://github.com/mturley">mturley</a> on github)</h3>
-  <a href="http://minecraftviewer.com/servers/2545661/view" target="_blank"><img src="http://cache.multiplayuk.com/b/1-2545661-560x95-2-FF5519-FFFFFF.png" alt="Server Banner" style="border:0;width:560px;height:95" /></a>
-  <p>If there are any problems with the server, bug me at at <a href="mailto:mike@miketurley.com">mike@miketurley.com</a></p>
-  <h2>For details and discussion, see our subreddit at <a href="http://reddit.com/r/rickandmortyserver">/r/rickandmortyserver</a>.</h2>
+  <p id="nav">
+    <strong>Server Status&nbsp; | &nbsp;<a href="http://mortycraft.net:8123/">World Map</a>&nbsp; | &nbsp;<a href="#mumble">Mumble Voice Chat</a>&nbsp; | &nbsp;<a href="#details">Server Details</a>&nbsp; | &nbsp;<a href="#howtoplay">How do I play?</a></strong>
+  </p>
+  <br />
+  <p>
+    <a href="http://minecraftviewer.com/servers/2545661/view" target="_blank"><img src="http://cache.multiplayuk.com/b/1-2545661-560x95-2-FF5519-FFFFFF.png" alt="Server Banner" style="border:0;width:560px;height:95" /></a>
+  </p>
+  <p>
+    Owner: Mike Turley (superyooman in game, <a href="http://reddit.com/u/yooman">/u/yooman</a> on reddit, <a href="https://github.com/mturley">mturley</a> on github)
+    <br />
+    If there are any problems with the server, bug me at at <a href="mailto:mike@miketurley.com">mike@miketurley.com</a>
+  </p>
+
+  <h2 class="indent">For details and discussion, see our subreddit at <a href="http://reddit.com/r/rickandmortyserver">/r/rickandmortyserver</a>.</h2>
   
-  <hr>
-  <h2 id="mumble">Voice Chat via Mumble</h2>
-  <p>
-    In addition to Minecraft, we are also running a Mumble server here on mortycraft.net.  To join us on voice chat:
+  <hr id="mumble" />
+  <div class="indent">
+    <h2>Mumble Voice Chat</h2>
+    <p>
+      In addition to Minecraft, we are also running a Mumble server here on mortycraft.net.  To join us on voice chat:
+      <ol>
+        <li>
+          Download, install and configure a Mumble client for your operating system.
+          <a href="http://mumble.sourceforge.net/" target="_blank">See "Get Mumble" on Sourceforge.</a>
+        </li><li>
+          Open the server list and click "Add New..."
+        </li><li>
+          Label the server whatever you like, and enter mortycraft.net for the address and 64738 for the port.
+        </li><li>
+          Click OK, then click Connect.  Introduce yourself and enjoy!
+        </li>
+      </ol>
+    </p>
+  </div>
+
+  <hr id="details" />
+  <div class="indent">
+    <h2>Configuration Details and Plugins</h2>
+    <p>
+    Currently, this server is running on a <a href="https://www.linode.com/">Linode 1024</a> ($20/mo) Ubuntu server owned and operated by /u/yooman (Mike Turley).
+    It is a bukkit server with a few minimal mods for control and permissions, otherwise running vanilla Minecraft. We are running:
+    </p>
+    <ul>
+    <li><a href="https://dl.bukkit.org/downloads/craftbukkit/">CraftBukkit 1.7.5-R0.1</a> (yes, running a dev version to keep up with Mojang's Minecraft client. We'll stay on top of version updates)</li>
+    <li><a href="http://dev.bukkit.org/bukkit-plugins/essentials/">Essentials 2.13.1</a></li>
+    <li><a href="http://dev.bukkit.org/bukkit-plugins/worldedit/files/52-world-edit-5-6/">WorldEdit 5.6</a> (if you'd like to join the building effort, ask us for access permissions to WorldEdit and WorldGuard)</li>
+    <li><a href="http://dev.bukkit.org/bukkit-plugins/worldguard/files/40-world-guard-5-9/">WorldGuard 5.9</a></li>
+    <li><a href="http://dev.bukkit.org/bukkit-plugins/permbukkit/files/7-permissions-bukkit-v2-2-beta/">PermissionsBukkit 2.2</a></li>
+    <li><a href="http://dev.bukkit.org/bukkit-plugins/dynmap/">DynMap 1.9.3</a></li>
+    </ul>
+    <p>And so far that's all.  We have plans to add multiverse, but no further modding (nothing crazy).  The goal is for mostly vanilla gameplay.</p>
+  </div>
+
+  <hr id="howtoplay" />
+  <div class="indent">
+    <h2>How do I play?</h2>
+    <p>If you're new to multiplayer minecraft servers, here's how to play:</p>
     <ol>
-      <li>
-        Download, install and configure a Mumble client for your operating system.
-        <a href="http://mumble.sourceforge.net/" target="_blank">See "Get Mumble" on Sourceforge.</a>
-      </li><li>
-        Open the server list and click "Add New..."
-      </li><li>
-        Label the server whatever you like, and enter mortycraft.net for the address and 64738 for the port.
-      </li><li>
-        Click OK, then click Connect.  Introduce yourself and enjoy!
-      </li>
+    <li>Click "Multiplayer" from the Minecraft Main Menu</li>
+    <li>Click "Add Server"</li>
+    <li>Enter the address mortycraft.net (or if that doesn't work, 96.126.111.207) for Server Address</li>
+    <li>Click "Done"</li>
+    <li>Select the server and click "Join Server"</li>
     </ol>
-  </p>
-
-  <hr>
-  <h2 id="details">Configuration Details and Plugins</h2>
-  <p>
-  Currently, this server is running on a <a href="https://www.linode.com/">Linode 1024</a> ($20/mo) Ubuntu server owned and operated by /u/yooman (Mike Turley).
-  It is a bukkit server with a few minimal mods for control and permissions, otherwise running vanilla Minecraft. We are running:
-  </p>
-  <ul>
-  <li><a href="https://dl.bukkit.org/downloads/craftbukkit/">CraftBukkit 1.7.5-R0.1</a> (yes, running a dev version to keep up with Mojang's Minecraft client. We'll stay on top of version updates)</li>
-  <li><a href="http://dev.bukkit.org/bukkit-plugins/essentials/">Essentials 2.13.1</a></li>
-  <li><a href="http://dev.bukkit.org/bukkit-plugins/worldedit/files/52-world-edit-5-6/">WorldEdit 5.6</a> (if you'd like to join the building effort, ask us for access permissions to WorldEdit and WorldGuard)</li>
-  <li><a href="http://dev.bukkit.org/bukkit-plugins/worldguard/files/40-world-guard-5-9/">WorldGuard 5.9</a></li>
-  <li><a href="http://dev.bukkit.org/bukkit-plugins/permbukkit/files/7-permissions-bukkit-v2-2-beta/">PermissionsBukkit 2.2</a></li>
-  <li><a href="http://dev.bukkit.org/bukkit-plugins/dynmap/">DynMap 1.9.3</a></li>
-  </ul>
-  <p>And so far that's all.  We have plans to add multiverse, but no further modding (nothing crazy).  The goal is for mostly vanilla gameplay.</p>
-
-  <hr>
-  <h2>How do I play?</h2>
-  <p>If you're new to multiplayer minecraft servers, here's how to play:</p>
-  <ol>
-  <li>Click "Multiplayer" from the Minecraft Main Menu</li>
-  <li>Click "Add Server"</li>
-  <li>Enter the address mortycraft.net (or if that doesn't work, 96.126.111.207) for Server Address</li>
-  <li>Click "Done"</li>
-  <li>Select the server and click "Join Server"</li>
-  </ol>
-  <p>See you in game!</p>
+    <p>See you in game!</p>
+  </div>
 </body>
 </html>
