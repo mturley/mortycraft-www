@@ -1,5 +1,6 @@
 <html>
 <head>
+  <title>mortycraft.net - Rick and Morty Minecraft Server</title>
   <style>
     #morty { margin-top: 15px; margin-left: 5px; }
     #title { font-size: 38px; position: absolute; top: 15px; left: 90px; margin: 0; }
@@ -11,6 +12,7 @@
     .indent { margin-left: 10px; }
     .wicon32 { position: relative; top: -6px; }
     .wicon32 img { position: relative; top: 6px; }
+    img.graph { width: 90%; margin: 5%; }
   </style>
 </head>
 <body>
@@ -18,7 +20,14 @@
   <h1 id="title">mortycraft.net / 96.126.111.207</h1>
   <h2 id="subtitle">Rick and Morty Fan Operated Minecraft Server</h2>
   <p id="nav">
-    <strong>Server Status&nbsp; | &nbsp;<a href="http://mortycraft.net:8123/">World Map <img src="link-ext.png" /></a>&nbsp; | &nbsp;<a href="#donate">Donations</a>&nbsp; | &nbsp;<a href="#mumble">Mumble Voice Chat</a>&nbsp; | &nbsp;<a href="#details">Server Details</a>&nbsp; | &nbsp;<a href="#howtoplay">How do I play?</a></strong>
+    <strong>
+      <a href="http://mortycraft.net:8123/">World Map <img src="link-ext.png" /></a> &nbsp;|&nbsp;
+      <a href="#donate">Donations</a> &nbsp;|&nbsp;
+      <a href="#mumble">Mumble Voice Chat</a> &nbsp;|&nbsp;
+      <a href="#howtoplay">How do I play?</a> &nbsp;|&nbsp;
+      <a href="#config">Server Configuration</a> &nbsp;|&nbsp;
+      <a href="#stats">Server Performance</a>
+    </strong>
   </p>
   <br />
   <p>
@@ -125,7 +134,21 @@
     </p>
   </div>
 
-  <hr id="details" />
+  <hr id="howtoplay" />
+  <div class="indent">
+    <h2 class="wicon32"><img src="info32.png" />&nbsp; How do I play?</h2>
+    <p>If you're new to multiplayer minecraft servers, here's how to play:</p>
+    <ol>
+    <li>Click "Multiplayer" from the Minecraft Main Menu</li>
+    <li>Click "Add Server"</li>
+    <li>Enter the address mortycraft.net (or if that doesn't work, 96.126.111.207) for Server Address</li>
+    <li>Click "Done"</li>
+    <li>Select the server and click "Join Server"</li>
+    </ol>
+    <p>See you in game!</p>
+  </div>
+
+  <hr id="config" />
   <div class="indent">
     <h2 class="wicon32"><img src="wrench32.png" />&nbsp; Configuration Details and Plugins</h2>
     <p>
@@ -143,20 +166,30 @@
     <p>And so far that's all.  We have plans to add multiverse, but no further modding (nothing crazy).  The goal is for mostly vanilla gameplay.</p>
   </div>
 
-  <hr id="howtoplay" />
+  <hr id="stats" />
   <div class="indent">
-    <h2 class="wicon32"><img src="info32.png" />&nbsp; How do I play?</h2>
-    <p>If you're new to multiplayer minecraft servers, here's how to play:</p>
-    <ol>
-    <li>Click "Multiplayer" from the Minecraft Main Menu</li>
-    <li>Click "Add Server"</li>
-    <li>Enter the address mortycraft.net (or if that doesn't work, 96.126.111.207) for Server Address</li>
-    <li>Click "Done"</li>
-    <li>Select the server and click "Join Server"</li>
-    </ol>
-    <p>See you in game!</p>
+    <h2 class="wicon32"><img src="linode32.png" />&nbsp; Linode Server Performance Statistics</h2>
+    <p>These are performance statistics from Linode about the node hosting our Minecraft and Mumble servers.</p>
+    <table>
+      <tr>
+        <td>
+          <h3>CPU Usage:</h3>
+          <img class="graph" src="https://stats7.linode.com/generate_graph.pl?linode=linode502117&username=mturley&graph=cpu&span=daily" />
+        </td><td>
+          <h3>Disk I/O:</h3>
+          <img class="graph" src="https://stats7.linode.com/generate_graph.pl?linode=linode502117&username=mturley&graph=io&span=daily" />
+        </td>
+      </tr><tr>
+        <td>
+          <h3>Network Traffic:</h3>
+          <img class="graph" src="https://stats7.linode.com/generate_graph.pl?linode=linode502117&username=mturley&graph=net&span=daily" />
+        </td><td>
+          <h3>IPv6 Traffic:</h3>
+          <img class="graph" src="https://stats7.linode.com/generate_graph.pl?linode=linode502117&username=mturley&graph=netv6&span=daily" />
+        </td>
+      </tr>
+    </table>
   </div>
-
   <br />
 </body>
 </html>
