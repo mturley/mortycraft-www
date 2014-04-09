@@ -1,0 +1,24 @@
+html.light { color: black; background-color: white; }
+html.light a { color: blue; }
+html.dark { color: white; background-color: black; }
+html.dark a { color: cyan; }
+#theme { position: fixed; top:0; right:0; margin: 20px; }
+#theme .selected { font-weight: bold; text-decoration: none; }
+html.light #theme .selected { color: black; }
+html.dark #theme .selected { color: white; }
+.morty { margin-top: 15px; margin-left: 5px; }
+#title { font-size: 38px; position: absolute; top: 15px; left: 100px; margin: 0; }
+#subtitle { position: absolute; top: 58px; left: 100px; margin: 0; }
+#nav { font-size: 18px; }
+#donate-table td.w300 { width: 300px }
+p { margin: 10px; }
+a { color: blue; }
+.indent { margin-left: 10px; }
+.wicon32 { position: relative; top: -6px; }
+.wicon32 img { position: relative; top: 6px; }
+img.graph { width: 90%; margin: 5%; }
+.strike { text-decoration: line-through; opacity: 0.5; }
+#alertbar { background-color: #FFCCCC; margin: 0; padding: 0; border: 2px solid black; }
+#alertbar h2, #alertbar h3 { margin: 0; padding: 5px; }
+#alertbar h2 { border-bottom: 2px solid black;  background-color: red; color: white; }
+#alertbar em { color: red; }
