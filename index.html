@@ -10,6 +10,7 @@
     #theme .selected { font-weight: bold; text-decoration: none; }
     html.light #theme .selected { color: black; }
     html.dark #theme .selected { color: white; }
+    #headerbar { position: relative; }
     .morty { margin-top: 15px; margin-left: 5px; }
     #title { font-size: 38px; position: absolute; top: 15px; left: 100px; margin: 0; }
     #subtitle { position: absolute; top: 58px; left: 100px; margin: 0; }
@@ -22,6 +23,11 @@
     .wicon32 img { position: relative; top: 6px; }
     img.graph { width: 90%; margin: 5%; }
     .strike { text-decoration: line-through; opacity: 0.5; }
+    #alertbar { background-color: #FFCCCC; margin: 0; padding: 0; border: 2px solid black; }
+    #alertbar h2, #alertbar h3 { margin: 0; padding: 5px; }
+    #alertbar h2 { border-bottom: 2px solid black;  background-color: red; color: white; }
+    #alertbar em { color: red; }
+
   </style>
   <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script>
@@ -46,7 +52,7 @@
 </head>
 <body>
   <div id="theme">Theme: <a href="#" class="light selected">Light</a> / <a href="#" class="dark">Dark</a></div>
-  <div class="indent">
+  <div class="indent" id="headerbar">
     <img class="light morty" src="morty64.png" />
     <img class="dark morty" src="morty64-inv.png" style="display: none;" />
     <h1 id="title">mortycraft.net / 96.126.111.207</h1>
@@ -66,6 +72,12 @@
         <a href="#config">Server Configuration</a>
       </strong>
     </p>
+  </div>
+  <br />
+  <div id="alertbar">
+    <h2>Notice Regarding Minecraft Version Upgrade</h2  >
+    <h3>We are currently running version <em>1.7.5</em> of CraftBukkit (our modified Minecraft server). Mojang has released a new <em>1.7.7</em> version of the Minecraft game launcher, which is currently <em>INCOMPATIBLE with our server.</em> We are currently waiting on the CraftBukkit dev team to get their fork of the server up-to-date with Mojang's updates.</h3>
+    <h3>Until the 1.7.7 CraftBukkit server is available, we will continue running 1.7.5.  When it is available we will upgrade. While we are still running 1.7.5, to play on our server <em>you must use a Minecraft launcher set to version 1.7.5 in Profiles.</em></h3>
   </div>
   <br />
   <p>
