@@ -14,4 +14,13 @@ $(function() {
     $("img.dark").show();
     $("img.light").hide();
   });
+
+  if(document.location.hash == "noalert") {
+    $("#alertbar").hide();
+  }
+
+  $("#alertbar").find('a.close').click(function() {
+    $("#alertbar").slideUp();
+    document.location.hash = "noalert";
+  });
 });

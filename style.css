@@ -2,7 +2,7 @@ html.light { color: black; background-color: white; }
 html.light a { color: blue; }
 html.dark { color: white; background-color: black; }
 html.dark a { color: cyan; }
-#theme { position: fixed; top:0; right:0; margin: 20px; }
+#theme { position: fixed; bottom:0; right:0; margin: 20px; }
 #theme .selected { font-weight: bold; text-decoration: none; }
 html.light #theme .selected { color: black; }
 html.dark #theme .selected { color: white; }
@@ -18,7 +18,74 @@ a { color: blue; }
 .wicon32 img { position: relative; top: 6px; }
 img.graph { width: 90%; margin: 5%; }
 .strike { text-decoration: line-through; opacity: 0.5; }
-#alertbar { background-color: #FFCCCC; margin: 0; padding: 0; border: 2px solid black; }
+#alertbar { background-color: #FFCCCC; margin: 0 0 20px 0; padding: 0; border: 2px solid black; }
 #alertbar h2, #alertbar h3 { margin: 0; padding: 5px; }
 #alertbar h2 { border-bottom: 2px solid black;  background-color: red; color: white; }
 #alertbar em { color: red; }
+#alertbar a.close { color: white; }
+
+p.top { padding-top: 15px; }
+.floatright { float: right; }
+
+#minecraftviewer { position: static; margin-bottom: 15px; }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	#minecraftviewer { position: absolute; top: 20px; left: 640px; }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	#minecraftviewer { position: absolute; top: 20px; left: 640px; }
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	#minecraftviewer { position: absolute; top: 20px; left: 640px; }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
