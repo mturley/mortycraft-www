@@ -2,6 +2,7 @@ html.light { color: black; background-color: white; }
 html.light a { color: blue; }
 html.dark { color: white; background-color: black; }
 html.dark a { color: cyan; }
+#top { position: fixed; top:0; right:0; margin: 20px; }
 #theme { position: fixed; bottom:0; right:0; margin: 20px; }
 #theme .selected { font-weight: bold; text-decoration: none; }
 html.light #theme .selected { color: black; }

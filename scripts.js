@@ -14,13 +14,23 @@ $(function() {
     $("img.dark").show();
     $("img.light").hide();
   });
-
-  if(document.location.hash == "noalert") {
-    $("#alertbar").hide();
-  }
-
-  $("#alertbar").find('a.close').click(function() {
+  
+  $("#alertbar").find('a.close').click(function(e) {
+    e.preventDefault();
     $("#alertbar").slideUp();
-    document.location.hash = "noalert";
+  });
+
+  $("a").click(function(e) {
+    var href = $(this).attr('href');
+    if(href.length > 1 && href[0] == '#') {
+      e.preventDefault();
+      $.scrollTo(href, 800);
+    }
+  });
+
+  $("#top").hide();
+  $("#nav").waypoint(function(direction) {
+    if(direction == "down") $("#top").fadeIn();
+    if(direction == "up") $("#top").fadeOut();
   });
 });
