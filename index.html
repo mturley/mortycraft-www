@@ -13,7 +13,7 @@
   <div class="indent" id="headerbar">
     <img class="light morty" src="img/morty64.png" />
     <img class="dark morty" src="img/morty64-inv.png" style="display: none;" />
-    <h1 id="title">mortycraft.net / 96.126.111.207</h1>
+    <h1 id="title">mortycraft.net / 75.102.46.16</h1>
     <h2 id="subtitle">Rick and Morty Fan Operated Minecraft Server</h2>
     <p id="nav">
       <strong>
@@ -27,10 +27,11 @@
   <div id="minecraftviewer" class="indent">
     <img src="http://cache.multiplayuk.com/b/1-2545661-560x95-4-FF5519-FFFFFF.png" alt="Server Banner" style="border:0;width:560px;height:95" />
   </div>
-<!--  <div id="alertbar">
-    <h2>Notice Regarding Minecraft Version Upgrade <a href="#" class="close floatright">Close</a></h2>
-    <h3>We recently upgraded from version 1.7.5 of the Minecraft server to version <em>1.7.8</em>.  If you are running an older version of the game please update it and/or remove the version rollback if you set one.</h3>
-  </div> -->
+  <div id="alertbar">
+    <h2>Migration to FragNet Complete! <a href="#" class="close floatright">Close</a></h2>
+    <h3>We have moved from our not-so-stable home at Linode to a new host, FragNet.  The better pricing there also means we are running with an additional 1 GB of RAM.  Woo!</h3>
+    <h3><em>The old server is still online until April 30th</em>, and is just a clone of the world which we can blow up and wreck in whatever ways we want to.  If you feel like causing some havoc over on the old server before it gets shut down, you can connect to it at 96.126.111.207.</h3>
+  </div>
   <p class="top">
     Owner: Mike Turley (superyooman in game, <a href="http://reddit.com/u/yooman">/u/yooman</a> on reddit, <a href="https://github.com/mturley">mturley</a> on github)
     <br />
@@ -58,7 +59,7 @@
     <h2 class="wicon32"><img class="light" src="img/donate32.png" /><img class="dark" src="img/donate32-inv.png" style="display: none;" />&nbsp; Donate to Help Support Server Costs</h2>
     <p>
       If you're able, it would be much appreciated if you pitched in a few bucks to help me pay for this server.<br />
-      Currently, I'm paying for it out of pocket ($40/month for the 2GB Linode).  Any amount helps, however small!  Thanks!
+      Currently, I'm paying for it out of pocket ($30/month for the 3GB FragNet package).  Any amount helps, however small!  Thanks!
     </p>
     <table id="donate-table">
       <tr>
@@ -72,7 +73,7 @@
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
           </form>
 
-        </td><td class="w300">
+        </td><!--<td class="w300">
           <h3>Donate via Amazon (currently down pending my account confirmation):</h3>
           <div style="width:20em;padding-left:10px;padding-top:0px;padding-right:10px;padding-bottom:0px;">
             <table class="table" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -101,7 +102,7 @@
             </tr>
             </table>
           </div>
-        </td>
+        </td>-->
       </tr>
     </table>
     <p>
@@ -109,9 +110,10 @@
       This server is still running thanks to the following generous users:
     </p>
     <ul>
-      <li>/u/storman [stormannorman] - $40! &lt;-- <strong>thanks to this man, we can run for at least another one month. wubalubadubduuuubs!</strong></li>
-      <li>/u/7U5K3N - $20</li>
-      <li>/u/storman AGAIN! - $15 &lt-- <strong>Hey guys storman can't be the only one helping out!</strong></li>
+      <li>/u/storman [stormannorman, ~Storm] - $55! &lt;-- <strong>thanks to this man, we can run for at least another one month. wubalubadubduuuubs!</strong></li>
+      <li>/u/Alaric_Jenkins [Alaric1992, ~Al] - $25</li>
+      <li>/u/7U5K3N [~tusken] - $20</li>
+      <li>IAmBo76 (I think?) - $5</li>
       <li>/u/Monatomic - $5</li>
     </ul>
   </div>
@@ -154,18 +156,17 @@
   <div class="indent">
     <h2 class="wicon32"><img class="light" src="img/wrench32.png" /><img class="dark" src="img/wrench32-inv.png" style="display: none;" />&nbsp; Configuration Details and Plugins</h2>
     <p>
-    Currently, this server is running on a <a href="https://www.linode.com/">Linode 2048</a> ($40/mo) Ubuntu server owned and operated by /u/yooman (Mike Turley).<br />
+    Currently, this server is running on a <a href="http://fragnet.net/games/minecraft.php">FragNet Minecraft Bronze Package</a> ($30/mo for 3GB RAM) owned and operated by /u/yooman (Mike Turley).<br />
     It is a bukkit server with a few minimal mods for control and permissions, otherwise running vanilla Minecraft. We are running:
     </p>
     <ul>
 	    <li><a href="https://dl.bukkit.org/downloads/craftbukkit/">CraftBukkit 1.7.8-R0.1</a> (yes, running a dev version to keep up with Mojang's Minecraft client. We'll stay on top of version updates)</li>
 	    <li><a href="http://dev.bukkit.org/bukkit-plugins/essentials/">Essentials 2.13.1</a></li>
-	    <li><a href="http://dev.bukkit.org/bukkit-plugins/worldedit/files/52-world-edit-5-6/">WorldEdit 5.6</a> (if you'd like to join the building effort, ask us for access permissions to WorldEdit and WorldGuard)</li>
+	    <li><a href="http://dev.bukkit.org/bukkit-plugins/worldedit/files/52-world-edit-5-6/">WorldEdit 5.6</a> (if you'd like to join the building effort, ask us for access permissions to WorldEdit and WorldGuard)</li>x
 	    <li><a href="http://dev.bukkit.org/bukkit-plugins/worldguard/files/40-world-guard-5-9/">WorldGuard 5.9</a></li>
 	    <li><a href="http://dev.bukkit.org/bukkit-plugins/permbukkit/files/7-permissions-bukkit-v2-2-beta/">PermissionsBukkit 2.2</a></li>
 	    <li><a href="http://dev.bukkit.org/bukkit-plugins/vault/">Vault 1.2.31</a> (dependency APIs for Enjin)</li>
 	    <li><a href="http://dev.bukkit.org/bukkit-plugins/emp/">Enjin DonationCraft 2.5.6</a> (I'll be setting this up soon to facilitate reserved player slots for people who donate)</li>
-	    <li><a href="http://dev.bukkit.org/bukkit-plugins/simple_restart/">SimpleRestart 1.3.4</a> (for server restart schedule and warnings)</li>
     </ul>
     <p>And so far that's all.  We have plans to add factions and multiverse, but no further modding (nothing crazy).  The goal is for mostly vanilla gameplay.</p>
   </div>
