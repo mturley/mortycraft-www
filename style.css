@@ -9,10 +9,11 @@ html.light #theme .selected { color: black; }
 html.dark #theme .selected { color: white; }
 html.light #top { background-color: white; }
 html.dark #top { background-color: black; }
-.morty { margin-top: 15px; margin-left: 5px; }
+#headerbar { position: relative; height: 130px; }
+.morty { position: absolute; top: 22px; left: 15px; }
 #title { font-size: 38px; position: absolute; top: 15px; left: 100px; margin: 0; }
 #subtitle { position: absolute; top: 58px; left: 100px; margin: 0; }
-#nav { font-size: 18px; }
+#nav { position: absolute; top: 85px; font-size: 18px; }
 #donate-table td.w300 { width: 300px }
 p { margin: 10px; }
 a { color: blue; }
@@ -29,6 +30,7 @@ img.graph { width: 90%; margin: 5%; }
 
 p.top { padding-top: 15px; }
 .floatright { float: right; }
+.center { text-align: center; }
 
 #minecraftviewer { position: static; margin-bottom: 15px; }
 
