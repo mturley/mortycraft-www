@@ -3,6 +3,9 @@
 body {
 	font-family: 'Open Sans', 'sans-serif';
 	font-weight: 400;
+	background: url('img/rickandmorty-bg.jpg');
+	padding: 0;
+	margin: 0;
 }
 
 h1, h2, h3, h4 {
@@ -20,7 +23,7 @@ html.light #theme .selected { color: black; }
 html.dark #theme .selected { color: white; }
 html.light #top { background-color: white; }
 html.dark #top { background-color: black; }
-#headerbar { position: relative; height: 130px; }
+#headerbar { display: inline-block; background-color: rgba(0,0,0,0.5); width: 900px; position: relative; height: 130px; padding: 10px; border: 2px solid black; }
 .morty { position: absolute; top: 22px; left: 15px; }
 #title { font-size: 38px; position: absolute; top: 15px; left: 100px; margin: 0; }
 #subtitle { position: absolute; top: 58px; left: 100px; margin: 0; }
