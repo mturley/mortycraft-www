@@ -78,7 +78,7 @@ and (max-device-width : 1024px) {
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
-	#minecraftviewer { position: absolute; top: 20px; left: 720px; }
+	#minecraftviewer { position: absolute; top: 20px; right: 20px; }
 }
 
 /* iPads (portrait) ----------- */
@@ -92,13 +92,13 @@ and (orientation : portrait) {
 /* Desktops and laptops ----------- */
 @media only screen 
 and (min-width : 1224px) {
-	#minecraftviewer { position: absolute; top: 20px; left: 720px; }
+	#minecraftviewer { position: absolute; top: 20px; right: 20px; }
 }
 
 /* Large screens ----------- */
 @media only screen 
 and (min-width : 1824px) {
-	#minecraftviewer { position: absolute; top: 20px; left: 720px; }
+	#minecraftviewer { position: absolute; top: 20px; right: 20px; }
 }
 
 /* iPhone 4 ----------- */
