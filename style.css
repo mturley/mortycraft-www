@@ -1,3 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,800);
+
+body {
+	font-family: 'Open Sans', 'sans-serif';
+	font-weight: 400;
+}
+
+h1, h2 {
+	font-weight: 800;
+}
+
+h3, h4 {
+	font-weight: 700;
+}
+
+
 html.light { color: black; background-color: white; }
 html.light a { color: blue; }
 html.dark { color: white; background-color: black; }
