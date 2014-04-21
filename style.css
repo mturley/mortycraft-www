@@ -34,6 +34,8 @@ p.top { padding-top: 15px; }
 
 #minecraftviewer { position: static; margin-bottom: 15px; }
 
+.faded { opacity: 0.5; }
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
